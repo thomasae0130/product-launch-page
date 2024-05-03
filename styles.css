@@ -1,0 +1,343 @@
+:root {
+    --colornav-background: #f5f5f7;
+    --colornav-swatch-size: 28px;
+    --sk-headline-text-color: #1d1d1f;
+    --font-family: 'Poppins', sans-serif;
+    --sk-body-text-color: #1d1d1f;
+}
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+  }
+  #nav-bar {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    z-index: 1000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    justify-content: space-between;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: var(--font-family);
+    color: black;
+    box-sizing: border-box;
+  }
+  .nav-link, .nav-link::before, .nav-link::after {
+    color: black;
+    text-decoration: none;
+  }
+  .nav-link:hover {
+    background-color: aliceblue;
+    padding: 3px;
+    border-radius: 10px;
+  }
+  #header-img {
+    width: 300px;
+    height: 300px;
+    border-radius: 25%;
+    margin: 10px 20px;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: optimizeQuality;
+    border: 3px solid black;
+  }
+#header {
+    display: grid;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    justify-content: space-between;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: var(--font-family);
+    color: black;
+    box-sizing: border-box; 
+  }
+  body {
+    display: grid;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  #header2 {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+    width: 100vw
+  }
+#finish {
+    color: var(--sk-headline-text-color, #1d1d1f);
+    font-family: var(--font-family);
+    font-weight: 550;
+    margin-left: 50px;
+  }
+.colorSwatch{
+    background: var(--colornav-background) center center;
+    border-radius: 50%;
+    display: block;
+    height: var(--colornav-swatch-size);
+    width: var(--colornav-swatch-size);
+    padding: 3px;
+    margin: 5px;
+}
+.colorSwatch:hover{
+    border: 2px solid rgba(37, 110, 206, 0.726);
+}
+.swatchFlex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly distribute;
+}
+.pick {
+    color: #86868b;
+    font-family: var(--font-family);
+    font-weight: 550;
+}
+#color {
+    font-family: var(--font-family);
+    font-weight: 550;
+    margin-left: 50px;
+}
+#storage {
+    color: var(--sk-headline-text-color, #1d1d1f);
+    font-weight: 550;
+    font-family: var(--font-family);
+}
+#hmun {
+    color: #86868b;
+    font-family: var(--font-family);
+    font-weight: 550;
+}
+.storage {
+    display: block;
+    align-items: center;
+    justify-content: start;
+    height: 100%;
+    padding: 5px;
+    margin: 0 10px;
+}
+.swatchName {
+    font-family: var(--font-family);
+    font-weight: 550;
+}
+#gb128, #gb256, #gb512 {
+ width: 95%;
+ height: 50px;
+ border: 2px solid rgba(0, 0, 0, 0.2);;
+ border-radius: 20px;
+ padding: 5px 0px;
+ margin: 10px;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+} 
+.hun, .twa, .fi {
+    margin-left: 10px;
+    font-family: var(--font-family);
+    color: #1d1d1f;
+}
+.from {
+    font-size: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 20%;
+}
+.storageVideoImg {
+    width: 225px;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: optimizeQuality;
+    border-radius: 20px;
+}
+.storageVideoImg:hover {
+    border: 2px solid rgba(37, 110, 206, 0.726);
+}
+.storageVideo {
+    background-color: rgba(226, 226, 226, 0.63);
+    border-radius: 20px;
+    height: 126.5px;
+    display: flex;
+}
+.displayImageText {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin-top: 22px;
+}
+#text1, #text2 {
+    font-size: 1rem;
+    height: 15px;
+    margin: 15px 5px;
+    color: var(--sk-body-text-color, #1d1d1f);
+}
+#text2 {
+    font-weight: 400;
+}
+a {
+    text-decoration: none;
+}
+.image-icon-design {
+    width: 81px;
+    height: 62px;
+    background-size: 81px 62px;
+    background-repeat: no-repeat;
+    background-image: url(https://www.apple.com/v/iphone/compare/ag/images/overview/icon_design__buduljgzh8fm_large.png);
+}
+.image-icon.image-icon-design {
+    margin-bottom: 0;
+}
+.image-icon-chip-a15 {
+    width: 62px;
+    height: 62px;
+    background-size: 62px 62px;
+    background-repeat: no-repeat;
+    background-image: url(https://www.apple.com/v/iphone/compare/ag/images/overview/icon_A15__cldbzv099xzm_large.jpg);
+    margin-top: 45px;
+}
+.image-icon-camera-dual2 {
+    width: 59px;
+    height: 59px;
+    background-size: 59px 59px;
+    background-repeat: no-repeat;
+    background-image: url(https://www.apple.com/v/iphone/compare/ag/images/overview/icon_iphone_dual2_lens__fn6dmiwwpnmi_large.jpg);
+}
+.image-icon-optical-zoom3 {
+    width: 61px;
+    height: 31px;
+    background-size: 61px 31px;
+    background-repeat: no-repeat;
+    background-image: url(https://www.apple.com/v/iphone/compare/ag/images/overview/icon_optical_zoom_3__fv6136vrvj22_large.jpg);
+}
+.image-icon-sos {
+    width: 63px;
+    height: 63px;
+    background-size: 63px 63px;
+    background-repeat: no-repeat;
+    background-image: url(https://www.apple.com/v/iphone/compare/ag/images/overview/icon_sos__c2memf0o0oom_large.jpg);
+}
+.image-icon-battery {
+    width: 75px;
+    height: 35px;
+    background-size: 75px 35px;
+    background-repeat: no-repeat;
+    background-image: url(https://www.apple.com/v/iphone/compare/ag/images/overview/icon_battery__ge1fjzzgyhym_large.jpg);
+}
+.image-icon-lightning {
+    width: 63px;
+    height: 25px;
+    background-size: 63px 25px;
+    background-repeat: no-repeat;
+    background-image: url(https://www.apple.com/v/iphone/compare/ag/images/overview/icon_lightning__7y9evq76biq6_large.png);
+}
+.image-icon-faceid {
+    width: 62px;
+    height: 62px;
+    background-size: 62px 62px;
+    background-repeat: no-repeat;
+    background-image: url(https://www.apple.com/v/iphone/compare/ag/images/overview/icon_face_id__ge6yb00wsmi6_large.jpg);
+}
+.image-icon-5g {
+    width: 83px;
+    height: 58px;
+    background-size: 83px 58px;
+    background-repeat: no-repeat;
+    background-image: url(https://www.apple.com/v/iphone/compare/ag/images/overview/icon_5g__b0gxvkl3jv2a_large.jpg);
+}
+.image-icon-ceramic {
+    width: 61px;
+    height: 71px;
+    background-size: 61px 71px;
+    background-repeat: no-repeat;
+    background-image: url(https://www.apple.com/v/iphone/compare/ag/images/overview/icon_ceramic_shield__esef7kqwglci_large.jpg);
+}
+.image-icon-magsafe {
+    width: 43px;
+    height: 78px;
+    background-size: 43px 78px;
+    background-repeat: no-repeat;
+    background-image: url(https://www.apple.com/v/iphone/compare/ag/images/overview/icon_magsafe__cpwajrp6pnhy_large.jpg);
+}
+.specs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    margin-left: 75px;
+    justify-items: center;
+}
+.height {
+    font-family: var(--font-family);
+    font-size: 4.0rem;
+}
+#specP {
+    font-family: var(--font-family);
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+.innovations {
+    text-align: center;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: var(--font-family);
+    font-size: 1.2rem;
+    color: var(--sk-body-text-color, #1d1d1f);
+    text-decoration: none;
+    font-weight: 400;
+}
+#battery{
+    margin-left: 48%;
+    margin-right: 50%;
+    margin-top: 20px;
+}
+.innovationH3 {
+    font-family: var(--font-family);
+    font-size: 1.2rem;
+    color: var(--sk-body-text-color, #1d1d1f);
+    text-decoration: none;
+    font-weight: 400;
+    margin-top: 30px;
+}
+main > h1{
+    text-align: center;
+    font-family: var(--font-family);
+    margin-top: 20px;
+    font-size: 2.7rem;
+}
+#video {
+    width: 500px;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: optimizeQuality;
+    border-radius: 20px;
+    margin-left: 37%;
+    margin-right: 25%;
+    margin-top: 30px;
+}
+@media only screen and (max-width: 1610px) {
+    .colorSwatch {
+        height: 20px;
+        width: 20px;
+        margin: 2px;
+    }
+    .productRed {
+        width: 35px;
+        height: 15px;
+    }
+}
+@media only screen and (max-Width: 1566px) {
+    #gb128, #gb256, #gb512 {
+        justify-content: space-around;
+    }
+}
+#form {
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
